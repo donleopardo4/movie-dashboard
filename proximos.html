@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Próximos estrenos</title>
+
+<style>
+  :root { --bg:#0b0f19; --card:#0f172a; --muted:#9aa4b2; --text:#e5e7eb; --line:rgba(255,255,255,.08); --ok:#22c55e; --warn:#f97316;}
+  body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; background: radial-gradient(1200px 800px at 20% 0%, #111a33 0%, var(--bg) 60%); color:var(--text); }
+  .container{max-width:1200px;margin:0 auto;padding:26px;}
+  .top{display:flex;gap:12px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;margin-bottom:10px;}
+  h1{margin:0;font-size:26px;}
+  .muted{color:var(--muted);font-size:12px;line-height:1.35;}
+  .card{background:rgba(15,23,42,.85);border:1px solid var(--line);border-radius:16px;padding:14px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.25);}
+  .btn{display:inline-block;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:13px}
+  .btn:hover{background:rgba(255,255,255,.09);}
+  .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0 0;}
+  .kpi{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:170px;}
+  .kpi .n{font-size:18px;font-weight:800;}
+  .kpi .t{font-size:12px;color:var(--muted);}
+  .tablewrap{overflow:auto;border-radius:12px;border:1px solid var(--line);margin-top:10px;}
+  table{border-collapse:separate;border-spacing:0;min-width:1100px;width:100%;background:rgba(0,0,0,.15);}
+  th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter: blur(6px);text-align:left;font-size:12px;color:#dbe3ef;}
+  tr:hover td{background:rgba(255,255,255,.04);}
+  .num{text-align:right;white-space:nowrap;}
+  .badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;font-weight:800;}
+  .badge.ok{background:rgba(34,197,94,.18);color:#86efac;border:1px solid rgba(34,197,94,.35);}
+  .badge.alert{background:rgba(249,115,22,.18);color:#fdba74;border:1px solid rgba(249,115,22,.35);}
+  .footer{margin-top:16px;color:var(--muted);font-size:12px;}
+</style>
+
+</head><body>
+<div class="container">
+  <div class="top">
+    <div>
+      <h1>Próximos estrenos</h1>
+      <div class="muted">Estrenos que todavía no ocurrieron</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="index.html">Inicio</a>
+      <a class="btn" href="proximos.html">Próximos</a>
+      <a class="btn" href="estrenadas.html">Estrenadas</a>
+    </div>
+  </div>
+  <div class='card'>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Estado</th>
+            <th>Película</th>
+            <th>Estreno</th>
+
+            <th>Trailer</th>
+            <th>Vistas</th>
+            <th>Me gusta</th>
+            <th>Comentarios</th>
+            <th>Link</th>
+
+            <th>X: posts</th>
+            <th>X: interacciones</th>
+
+            <th>INCAA: entradas</th>
+            <th>INCAA: recaudación</th>
+            <th>INCAA: pantallas</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr>
+          <td><span class="badge ok">OK</span></td>
+          <td><b>LOS OJOS DEL ABISMO</b><div class="muted"></div></td>
+          <td>2026-01-01<div class="muted">Faltan 5 días</div></td>
+
+          <td>YouTube</td>
+          <td class="num">6.154<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">0<div class="muted">Cambio 24 h: —</div></td>
+          <td><a class="btn" href="https://youtu.be/gP87iEu7pz0" target="_blank" rel="noopener">Abrir trailer</a></td>
+
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge ok">OK</span></td>
+          <td><b>LA LENGUA</b><div class="muted"></div></td>
+          <td>2026-01-01<div class="muted">Faltan 5 días</div></td>
+
+          <td>Vimeo</td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td><a class="btn" href="https://vimeo.com/703285266 /Teaser-LaLengua" target="_blank" rel="noopener">Abrir trailer</a></td>
+
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge ok">OK</span></td>
+          <td><b>SAINT CATHERINE</b><div class="muted"></div></td>
+          <td>2026-01-08<div class="muted">Faltan 12 días</div></td>
+
+          <td>YouTube</td>
+          <td class="num">4.002<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">37<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">10<div class="muted">Cambio 24 h: —</div></td>
+          <td><a class="btn" href="https://www.youtube.com/watch?v=1O2ThxYfSNA" target="_blank" rel="noopener">Abrir trailer</a></td>
+
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+        </tr>
+        
+        <tr>
+          <td><span class="badge ok">OK</span></td>
+          <td><b>VOLVER A LOS 17</b><div class="muted"></div></td>
+          <td>2026-01-22<div class="muted">Faltan 26 días</div></td>
+
+          <td>Vimeo</td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td><a class="btn" href="https://vimeo.com/1107255875?share=copy /// Password: 2025" target="_blank" rel="noopener">Abrir trailer</a></td>
+
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+    </div>
+  <div class="footer">Actualizado: 27/12/2025</div>
+</div>
+</body></html>
