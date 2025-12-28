@@ -7,7 +7,7 @@
 <style>
   :root { --bg:#0b0f19; --card:#0f172a; --muted:#9aa4b2; --text:#e5e7eb; --line:rgba(255,255,255,.08); --ok:#22c55e; --warn:#f97316;}
   body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; background: radial-gradient(1200px 800px at 20% 0%, #111a33 0%, var(--bg) 60%); color:var(--text); }
-  .container{max-width:1200px;margin:0 auto;padding:26px;}
+  .container{max-width:1300px;margin:0 auto;padding:26px;}
   .top{display:flex;gap:12px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;margin-bottom:10px;}
   h1{margin:0;font-size:26px;}
   .muted{color:var(--muted);font-size:12px;line-height:1.35;}
@@ -19,7 +19,7 @@
   .kpi .n{font-size:18px;font-weight:800;}
   .kpi .t{font-size:12px;color:var(--muted);}
   .tablewrap{overflow:auto;border-radius:12px;border:1px solid var(--line);margin-top:10px;}
-  table{border-collapse:separate;border-spacing:0;min-width:1100px;width:100%;background:rgba(0,0,0,.15);}
+  table{border-collapse:separate;border-spacing:0;min-width:1400px;width:100%;background:rgba(0,0,0,.15);}
   th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
   th{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter: blur(6px);text-align:left;font-size:12px;color:#dbe3ef;}
   tr:hover td{background:rgba(255,255,255,.04);}
@@ -35,7 +35,7 @@
   <div class="top">
     <div>
       <h1>Ya estrenadas</h1>
-      <div class="muted">Estrenadas dentro de la ventana configurada</div>
+      <div class="muted">Estrenadas dentro de la ventana configurada. Ultracine: Ultracine: lista vacía tras normalizar (https://www.ultracine.com/webservices/services/json/wsHomeTopMovies.php?token=c4ca4238a0b923820dcc509a6f75849b&cty_id=ar&limit=10)</div>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
       <a class="btn" href="index.html">Inicio</a>
@@ -58,8 +58,11 @@
             <th>Comentarios</th>
             <th>Link</th>
 
-            <th>X: posts</th>
+            <th>X: publicaciones</th>
             <th>X: interacciones</th>
+
+            <th>Ultracine: público</th>
+            <th>Ultracine: acumulado</th>
 
             <th>INCAA: entradas</th>
             <th>INCAA: recaudación</th>
@@ -70,17 +73,47 @@
           
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>NUEVE AURAS</b><div class="muted"></div></td>
-          <td>2025-12-25<div class="muted">Hace 2 días</div></td>
+          <td>
+            <b>NUEVE AURAS</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-25
+            <div class="muted">Hace 3 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">7.191<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">84<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">5<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            7.226
+            <div class="muted">Cambio 24 h: 35</div>
+          </td>
+
+          <td class="num">
+            84
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            5
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=ItFL32DCHSA" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -89,17 +122,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>Dussel. La filosofía es un don para un mundo sin sentido</b><div class="muted"></div></td>
-          <td>2025-12-18<div class="muted">Hace 9 días</div></td>
+          <td>
+            <b>Dussel. La filosofía es un don para un mundo sin sentido</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-18
+            <div class="muted">Hace 10 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">668<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">47<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">2<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            668
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            47
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            2
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://youtu.be/w9MOgiNvJUU" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -108,17 +171,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>CIUDADES DE REFUGIO</b><div class="muted"></div></td>
-          <td>2025-12-18<div class="muted">Hace 9 días</div></td>
+          <td>
+            <b>CIUDADES DE REFUGIO</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-18
+            <div class="muted">Hace 10 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">3.654<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">36<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">1<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            3.662
+            <div class="muted">Cambio 24 h: 8</div>
+          </td>
+
+          <td class="num">
+            36
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            1
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=8oDYkO-hI7c" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -127,17 +220,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>LA MAESTRIA</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>LA MAESTRIA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>Vimeo</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://vimeo.com/909447566?fl=ip&amp;fe=ec" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -146,17 +269,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>TUNUN</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>TUNUN</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>Link</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="TrailerTUNUN.mp4" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -165,17 +318,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>PATRULLA DEL CLIMA</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>PATRULLA DEL CLIMA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">290<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">17<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            292
+            <div class="muted">Cambio 24 h: 2</div>
+          </td>
+
+          <td class="num">
+            17
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://youtu.be/BI7L6IiVTMA?si=66RtFZwKDxZ_6Yao" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -184,17 +367,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>SINTESIS: ESTO NO ES MUSICA</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>SINTESIS: ESTO NO ES MUSICA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">220<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">3<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">0<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            220
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            3
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            0
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=yqBvj_QlGwo" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -203,17 +416,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>76 89 93</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>76 89 93</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>Vimeo</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://vimeo.com/1040603159/06b61fc8a8?fl=pl&amp;fe=sh" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -222,17 +465,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>DESBARRANCADA</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>DESBARRANCADA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">6.312<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">19<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">0<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            6.397
+            <div class="muted">Cambio 24 h: 85</div>
+          </td>
+
+          <td class="num">
+            19
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            0
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=NIktJBJzOfQ" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -241,17 +514,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>3000 KM EN BICICLETA</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>3000 KM EN BICICLETA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">983<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">20<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">7<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            993
+            <div class="muted">Cambio 24 h: 10</div>
+          </td>
+
+          <td class="num">
+            20
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            7
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=JPdvYrza_ys" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -260,17 +563,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>UN CABO SUELTO</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>UN CABO SUELTO</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">8.043<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">3<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            8.085
+            <div class="muted">Cambio 24 h: 42</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            3
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=n2kuAzrHERM" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -279,17 +612,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>EL FUEGO QUE HEMOS CONSTRUIDO</b><div class="muted"></div></td>
-          <td>2025-12-11<div class="muted">Hace 16 días</div></td>
+          <td>
+            <b>EL FUEGO QUE HEMOS CONSTRUIDO</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-11
+            <div class="muted">Hace 17 días</div>
+          </td>
 
           <td>Vimeo</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://vimeo.com/801997712" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -298,17 +661,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>TRES TIEMPOS</b><div class="muted"></div></td>
-          <td>2025-12-04<div class="muted">Hace 23 días</div></td>
+          <td>
+            <b>TRES TIEMPOS</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-04
+            <div class="muted">Hace 24 días</div>
+          </td>
 
           <td>Vimeo</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://vimeo.com/marlenegrinberg/trailertrestiempos" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            50
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            556
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -317,17 +710,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>BIZARROFILIA</b><div class="muted"></div></td>
-          <td>2025-12-04<div class="muted">Hace 23 días</div></td>
+          <td>
+            <b>BIZARROFILIA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-04
+            <div class="muted">Hace 24 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">908<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">94<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">21<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            908
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            94
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            21
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=KMQjynCIFRk" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -336,17 +759,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>VIEJA LOCA</b><div class="muted"></div></td>
-          <td>2025-12-04<div class="muted">Hace 23 días</div></td>
+          <td>
+            <b>VIEJA LOCA</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-04
+            <div class="muted">Hace 24 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">295.219<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">394<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">79<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            295.265
+            <div class="muted">Cambio 24 h: 46</div>
+          </td>
+
+          <td class="num">
+            394
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
+          <td class="num">
+            79
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=0YMtW4jOtEY" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -355,17 +808,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>LA MUERTE DE UN COMEDIANTE</b><div class="muted"></div></td>
-          <td>2025-12-04<div class="muted">Hace 23 días</div></td>
+          <td>
+            <b>LA MUERTE DE UN COMEDIANTE</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-04
+            <div class="muted">Hace 24 días</div>
+          </td>
 
           <td>YouTube</td>
-          <td class="num">18.164<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">52<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">1<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            18.272
+            <div class="muted">Cambio 24 h: 108</div>
+          </td>
+
+          <td class="num">
+            53
+            <div class="muted">Cambio 24 h: 1</div>
+          </td>
+
+          <td class="num">
+            1
+            <div class="muted">Cambio 24 h: 0</div>
+          </td>
+
           <td><a class="btn" href="https://www.youtube.com/watch?v=dLBTCiNJHX0" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">—</td>
+          <td class="num">—</td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -374,36 +857,47 @@
         
         <tr>
           <td><span class="badge ok">OK</span></td>
-          <td><b>WESER</b><div class="muted"></div></td>
-          <td>2025-12-04<div class="muted">Hace 23 días</div></td>
+          <td>
+            <b>WESER</b>
+            <div class="muted"></div>
+          </td>
+
+          <td>
+            2025-12-04
+            <div class="muted">Hace 24 días</div>
+          </td>
 
           <td>Vimeo</td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
           <td><a class="btn" href="https://vimeo.com/1121244675?share=copy" target="_blank" rel="noopener">Abrir trailer</a></td>
 
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">—<div class="muted">Cambio 24 h: —</div></td>
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
+
+          <td class="num">
+            —
+            <div class="muted">Cambio 24 h: —</div>
+          </td>
 
           <td class="num">—</td>
           <td class="num">—</td>
-          <td class="num">—</td>
-        </tr>
-        
-        <tr>
-          <td><span class="badge ok">OK</span></td>
-          <td><b>LA DICHA EN MOVIMIENTO</b><div class="muted"></div></td>
-          <td>2025-11-27<div class="muted">Hace 30 días</div></td>
-
-          <td>YouTube</td>
-          <td class="num">153.841<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">66<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">0<div class="muted">Cambio 24 h: —</div></td>
-          <td><a class="btn" href="https://www.youtube.com/watch?v=EHFvsHQz0EQ" target="_blank" rel="noopener">Abrir trailer</a></td>
-
-          <td class="num">2<div class="muted">Cambio 24 h: —</div></td>
-          <td class="num">17<div class="muted">Cambio 24 h: 0</div></td>
 
           <td class="num">—</td>
           <td class="num">—</td>
@@ -414,6 +908,6 @@
       </table>
     </div>
     </div>
-  <div class="footer">Actualizado: 27/12/2025</div>
+  <div class="footer">Actualizado: 28/12/2025</div>
 </div>
 </body></html>
