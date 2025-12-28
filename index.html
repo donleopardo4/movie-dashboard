@@ -7,7 +7,7 @@
 <style>
   :root { --bg:#0b0f19; --card:#0f172a; --muted:#9aa4b2; --text:#e5e7eb; --line:rgba(255,255,255,.08); --ok:#22c55e; --warn:#f97316;}
   body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; background: radial-gradient(1200px 800px at 20% 0%, #111a33 0%, var(--bg) 60%); color:var(--text); }
-  .container{max-width:1200px;margin:0 auto;padding:26px;}
+  .container{max-width:1300px;margin:0 auto;padding:26px;}
   .top{display:flex;gap:12px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;margin-bottom:10px;}
   h1{margin:0;font-size:26px;}
   .muted{color:var(--muted);font-size:12px;line-height:1.35;}
@@ -19,7 +19,7 @@
   .kpi .n{font-size:18px;font-weight:800;}
   .kpi .t{font-size:12px;color:var(--muted);}
   .tablewrap{overflow:auto;border-radius:12px;border:1px solid var(--line);margin-top:10px;}
-  table{border-collapse:separate;border-spacing:0;min-width:1100px;width:100%;background:rgba(0,0,0,.15);}
+  table{border-collapse:separate;border-spacing:0;min-width:1400px;width:100%;background:rgba(0,0,0,.15);}
   th,td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
   th{position:sticky;top:0;background:rgba(0,0,0,.35);backdrop-filter: blur(6px);text-align:left;font-size:12px;color:#dbe3ef;}
   tr:hover td{background:rgba(255,255,255,.04);}
@@ -46,14 +46,15 @@
   
     <div class="card">
       <div class="muted">
-        Ventana de estrenos: <b>2025-11-27</b> → <b>2026-01-26</b><br/>
-        Catálogo: “PELICULAS” / “FECHA DE ESTRENO ” / “TRAILER” · delimitadores: [',', ',']<br/>
-        INCAA histórico manual: <b>OK (incaa_historico_manual.csv)</b>
+        Ventana de estrenos: <b>2025-11-28</b> → <b>2026-01-27</b><br/>
+        Catálogo INCAA (CSV): “PELICULAS” / “FECHA DE ESTRENO ” / “TRAILER” · delimitadores detectados: [',', ',']<br/>
+        INCAA histórico manual: <b>OK (incaa_historico_manual.csv)</b><br/>
+        Ultracine (TOP semanal): <b>Ultracine: lista vacía tras normalizar (https://www.ultracine.com/webservices/services/json/wsHomeTopMovies.php?token=c4ca4238a0b923820dcc509a6f75849b&amp;cty_id=ar&amp;limit=10)</b>
       </div>
       <div class="kpis">
-        <div class="kpi"><div class="n">22</div><div class="t">títulos en ventana</div></div>
+        <div class="kpi"><div class="n">21</div><div class="t">títulos en ventana</div></div>
         <div class="kpi"><div class="n">4</div><div class="t">próximos estrenos</div></div>
-        <div class="kpi"><div class="n">18</div><div class="t">ya estrenadas</div></div>
+        <div class="kpi"><div class="n">17</div><div class="t">ya estrenadas</div></div>
         <div class="kpi"><div class="n">0</div><div class="t">con alerta</div></div>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
@@ -62,6 +63,6 @@
       </div>
     </div>
     
-  <div class="footer">Actualizado: 27/12/2025</div>
+  <div class="footer">Actualizado: 28/12/2025</div>
 </div>
 </body></html>
