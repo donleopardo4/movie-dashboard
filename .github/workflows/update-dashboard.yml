@@ -21,8 +21,6 @@ jobs:
           pip install requests
 
       - run: |
-          echo "INCAA_CSV_URL_1=${{ secrets.INCAA_CSV_URL_1 }}" >> config.env
-          echo "INCAA_CSV_URL_2=${{ secrets.INCAA_CSV_URL_2 }}" >> config.env
           echo "YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}" >> config.env
           echo "X_BEARER_TOKEN=${{ secrets.X_BEARER_TOKEN }}" >> config.env
           echo "GITHUB_OWNER=${{ secrets.GITHUB_OWNER }}" >> config.env
