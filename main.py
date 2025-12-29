@@ -76,8 +76,10 @@ CSV_URLS = [u for u in CSV_URLS if u]
 if not CSV_URLS:
     raise RuntimeError("Faltan INCAA_CSV_URL_1 / INCAA_CSV_URL_2 en config.env")
 
-# INCAA histórico manual (opcional)
-INCAA_HIST_CSV = os.getenv("INCAA_HIST_CSV", "incaa_historico_manual.csv")
+# INCAA histórico manual desactivado (no se usa)
+INCAA_CSV_URL_1 = os.getenv("INCAA_CSV_URL_1", "").strip()
+INCAA_CSV_URL_2 = os.getenv("INCAA_CSV_URL_2", "").strip()
+# No levantar error si faltan
 
 # APIs
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")  # opcional, pero recomendado
@@ -1080,3 +1082,4 @@ if __name__ == "__main__":
         main()
     finally:
         conn.close()
+
