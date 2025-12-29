@@ -16,10 +16,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
             - run: |
           echo "INCAA_CSV_URL_1=${{ secrets.INCAA_CSV_URL_1 }}" >> config.env
           echo "INCAA_CSV_URL_2=${{ secrets.INCAA_CSV_URL_2 }}" >> config.env
@@ -31,5 +27,10 @@ jobs:
           echo "PAGES_URL=${{ secrets.PAGES_URL }}" >> config.env
           echo "SEND_EMAIL=0" >> config.env
 
+      - name: Reset DB (fresh schema)
+        run: |
+          rm -f movie.db
+
       - run: |
           python main.py
+
